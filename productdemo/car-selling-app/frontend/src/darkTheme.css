@@ -1,0 +1,91 @@
+/* src/darkTheme.css */
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ensure no default margin */
+    padding: 20px; /* Add some padding for better layout */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+input, textarea {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #6200ea; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+button:active {
+    background-color: #4a00b0; /* Darker shade on click */
+}
+
+button:disabled {
+    background-color: #555; /* Gray out disabled buttons */
+    cursor: not-allowed;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #2a2a2a; /* Highlight list items on hover */
+}
+
+/* Optional: Style links */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3700b3; /* Darker shade on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+    
+    button {
+        width: 100%; /* Full-width buttons on mobile */
+    }
+}

@@ -1,0 +1,26 @@
+/* src/components/CarCard.css */
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-group button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px; /* Increased padding for better touch targets */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.button-group button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.button-group button:active {
+    transform: scale(0.95); /* Slightly scale down when clicked */
+}

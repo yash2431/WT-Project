@@ -1,0 +1,29 @@
+/* src/components/CarList.css */
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Add transition for smoother effects */
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-input:focus {
+    border-color: #6200ea; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5); /* Add shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+@media (max-width: 600px) {
+    .search-input {
+        max-width: 90%; /* Make input more responsive on smaller screens */
+    }
+}
